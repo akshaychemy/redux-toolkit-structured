@@ -14,7 +14,7 @@ export const createTutorial = createAsyncThunk(
 export const retrieveTutorials = createAsyncThunk(
   "tutorials/retrieve",
   async () => {
-    const res = await TutorialDataService.getAll();
+    const res = await TutorialDataService.getAll(); 
     return res.data;
   }
 );
